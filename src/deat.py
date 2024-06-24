@@ -1,6 +1,10 @@
 import math
 
 
+
+def getBestNN(nnList):
+    return None
+
 class Neuron():
     def __init__(self) -> None:
         pass
@@ -18,13 +22,13 @@ class NeuralNetork():
         self.outputNodes = numberOfOutputNodes
         self.score = 0
 
-    def mutate(self):
+    def mutate(self, rate, bestNN):
         pass
 
     def getBestNN(self):
         pass
 
-    def calcOutput(self):
+    def calcOutput(self, inputs):
         pass
 
 
