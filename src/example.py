@@ -24,6 +24,18 @@ for i in range(generations):
 
             NNoutput = nn.calcOutput(inputs)
 
+            NNchoice = NNoutput.index(max(NNoutput))
+
+            correctIndex = inputs.index(max(inputs))
+
+            if NNchoice == correctIndex:
+                nn.score += 1
+
+            else:
+                nn.score -= 1
+
+            
+
             # gucken ob es richtig ist und score geben
 
     
